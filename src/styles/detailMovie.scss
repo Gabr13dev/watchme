@@ -1,0 +1,43 @@
+.detail-movie {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    nav {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+        height: 10vh;
+        background-color: var(--background-button2);
+        color: var(--yellow);
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        grid-template-columns: 1fr 2fr;
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 700;
+        .controller {
+            display: flex;
+            align-items: center;
+            white-space: pre-wrap;
+            cursor: pointer;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .content-detail {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        div {
+            padding: 3rem;
+            img {
+                width: 406px;
+                border: 8px inset #5f6632;
+                padding: 15px;
+                background: #b1b1c3;
+            }
+        }
+    }
+}
